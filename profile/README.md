@@ -53,7 +53,7 @@ Aunque el núcleo de ejecución es privado para garantizar la seguridad del serv
 
 ---
 
-*Desarrollado con ❤️ por Jorge e impulsado por la comunidad de inventores.*
+*Desarrollado con ❤️ por FrostCore e impulsado por la comunidad de inventores.*
 
 <!--
 
