@@ -48,8 +48,8 @@ Aunque el núcleo de ejecución es privado para garantizar la seguridad del serv
 
 ## 📫 Contacto y Soporte
 
-- **Website:** [apider.dev](https://apider.dev)
-- **Email:** soporte@apider.dev
+- **Website:** [apider](https://apider-io.github.io/)
+- **Email:** frostcore@jafa.dev
 
 ---
 
