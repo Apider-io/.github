@@ -7,8 +7,10 @@ Bienvenido a la organización oficial de **Apider**. Nuestra misión es eliminar
 ---
 
 ## 🛠️ Nuestros Proyectos Principales
-
-### [Apider SDK](https://github.com/apider-org/apider)
+<!-- 
+### [Apider SDK](https://github.com/apider-org/apider)  
+-->
+### Apider SDK
 El núcleo de nuestro ecosistema. Un SDK de Python "Thin-client" que abstrae la complejidad de APIs como Google Sheets, Telegram, Discord y protocolos de Email (SMTP/IMAP).
 - **Enfoque:** Code-First.
 - **Arquitectura:** Ejecución remota en Azure Functions.
