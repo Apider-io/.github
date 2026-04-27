@@ -1,61 +1,73 @@
-# 🚀 Apider Organization
+# Apider
 
-**Redefiniendo la automatización para inventores y desarrolladores.**
+**Redefining automation for developers and builders.**
 
-Bienvenido a la organización oficial de **Apider**. Nuestra misión es eliminar la fricción entre la idea y la ejecución, permitiendo que cualquier desarrollador pueda conectar servicios complejos con una sola línea de código y escalar sus proyectos a la nube de forma instantánea.
-
----
-
-## 🛠️ Nuestros Proyectos Principales
-<!-- 
-### [Apider SDK](https://github.com/apider-org/apider)  
--->
-### Apider SDK
-El núcleo de nuestro ecosistema. Un SDK de Python "Thin-client" que abstrae la complejidad de APIs como Google Sheets, Telegram, Discord y protocolos de Email (SMTP/IMAP).
-- **Enfoque:** Code-First.
-- **Arquitectura:** Ejecución remota en Azure Functions.
-- **Estado:** ✅ Estable / Versión 1.0 disponible.
+Apider's mission is to eliminate the friction between idea and execution — letting any developer connect complex services with a single line of Python and scale to the cloud instantly.
 
 ---
 
-## ✨ Nuestra Filosofía: El "Thin SDK"
+## 🛠️ Projects
 
-En Apider creemos que el valor de un inventor está en su lógica, no en pelearse con configuraciones de OAuth o mantenimiento de servidores. 
+### [Apider SDK](https://github.com/Apider-io/apider)
 
-1. **Privacidad de IP:** Tu código corre en un entorno aislado y seguro.
-2. **Simplicidad:** Si requiere más de una línea de código para enviar un mensaje o leer una tabla, no es Apider.
-3. **Escalabilidad:** De un script local a una tarea programada en la nube en segundos vía `apider sync`.
+The core of our ecosystem. A Python thin-client SDK that abstracts the complexity of APIs like Google Sheets, Telegram, Discord, Slack, and Email (SMTP/IMAP).
 
----
+- **Approach:** Code-first. No YAML, no DSL, no config files.
+- **Architecture:** Thin client on PyPI → execution on Azure Functions.
+- **Status:** ✅ Live on PyPI — `pip install apider`
 
-## 💳 Modelo SaaS & E-Residency
+```python
+from apider import Email, Telegram, CloudScheduler
 
-Apider opera como una entidad legal bajo el programa de **e-Residency de Estonia**, garantizando un estándar global para la gestión de pagos (vía Paddle) y protección de propiedad intelectual.
+def monitor():
+    emails = Email.read(unread_only=True)
+    Telegram.send(f"📬 {len(emails)} new emails")
 
-### Planes Disponibles:
-- **Free:** Para exploradores e inventores individuales (2k ejecuciones/mes).
-- **Pro:** Para automatizaciones de nivel profesional (50k ejecuciones/mes).
-- **Business:** Para empresas que requieren escalabilidad masiva y soporte prioritario.
-
----
-
-## 🤝 Contribuciones y Comunidad
-
-Aunque el núcleo de ejecución es privado para garantizar la seguridad del servicio, el SDK es **visible y auditable**. Creemos en la transparencia del software ("Fair-code").
-
-- **¿Eres desarrollador?** Revisa nuestro SDK y ayúdanos a mejorar los módulos.
-- **¿Tienes una idea?** Abre un Issue con una propuesta de nuevo módulo (WhatsApp, Webhooks, etc.).
+CloudScheduler.every_minutes(10, monitor)
+```
 
 ---
 
-## 📫 Contacto y Soporte
+## ✨ Philosophy
 
-- **Website:** [apider](https://apider-io.github.io/)
-- **Email:** frostcore@jafa.dev
+At Apider we believe the value of a developer is in their logic — not in fighting OAuth configurations or maintaining servers.
+
+- **IP Protection:** Your code runs in an isolated, secure environment. The PyPI package contains no integration logic — just HTTP calls.
+- **Simplicity:** If it takes more than one line to send a message or read a table, it's not Apider.
+- **Scalability:** From a local script to a scheduled cloud job in seconds.
 
 ---
 
-*Desarrollado con ❤️ por FrostCore e impulsado por la comunidad de inventores.*
+## 💳 Plans
+
+| Plan | Price | Executions/month | Jobs |
+|---|---|---|---|
+| Free | $0 | 2,000 | 1 |
+| Pro | $19/mo | 50,000 | 10 |
+| Business | $49/mo | 500,000 | Unlimited |
+
+[→ Get started](https://apider-io.github.io)
+
+---
+
+## 🤝 Community & Contributions
+
+The execution core is private to guarantee service security, but the SDK is **visible and auditable**. We believe in software transparency.
+
+- **Developer?** Review the SDK and help us improve modules.
+- **Have an idea?** Open an Issue with a new module proposal (WhatsApp, Webhooks, AI, etc.).
+
+---
+
+## 📫 Contact & Support
+
+- **Website:** [apider-io.github.io](https://apider-io.github.io)
+- **PyPI:** [pypi.org/project/apider](https://pypi.org/project/apider/)
+- **Email:** [frostcore@jafa.dev](mailto:frostcore@jafa.dev)
+
+---
+
+*Built with ❤️ by [Jorge de la Flor](https://github.com/Jorge-de-la-Flor)*
 
 <!--
 
