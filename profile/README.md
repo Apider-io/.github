@@ -8,7 +8,8 @@ Apider's mission is to eliminate the friction between idea and execution — let
 
 ## 🛠️ Projects
 
-### [Apider SDK](https://github.com/Apider-io/apider)
+<!--### [Apider SDK](https://github.com/Apider-io/apider)-->
+### Apider SDK
 
 The core of our ecosystem. A Python thin-client SDK that abstracts the complexity of APIs like Google Sheets, Telegram, Discord, Slack, and Email (SMTP/IMAP).
 
