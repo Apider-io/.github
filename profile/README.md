@@ -46,7 +46,7 @@ CloudScheduler.every_minutes(10, monitor)
 - 💬 Discord  
 - 💼 Slack  
 - 📊 Google Sheets (with type inference)  
-- ⏰ Scheduler (local + cloud)  
+- ⏰ Scheduler (cloud)  <!--(local + cloud) --> 
 
 ---
 
